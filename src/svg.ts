@@ -78,7 +78,8 @@ export function generateSVG(contributions: YearContributions[]): string {
   const totalHeight = contributions.length * (yearHeight + YEAR_GAP) - YEAR_GAP + 20;
   const totalWidth = YEAR_LABEL_WIDTH + 53 * (CELL_SIZE + CELL_GAP) + 10;
 
-  const yearGrids = contributions.map((yearData, index) => {
+  const reversed = [...contributions].reverse();
+  const yearGrids = reversed.map((yearData, index) => {
     const yOffset = index * (yearHeight + YEAR_GAP) + 10;
     return generateYearGrid(yearData, yOffset);
   });
