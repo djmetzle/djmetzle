@@ -1,8 +1,6 @@
-# Daryl Metzler
+<h1><a href="https://djmetzle.io"><img src="./djmetzle-light.png" alt="djmetzle.io" width="32" height="32"></a> Daryl Metzler</h1>
 
 See my blog at [djmetzle.io](https://djmetzle.io)
-
-<a href="https://djmetzle.io"><img src="./djmetzle-light.png" alt="djmetzle.io" width="64" height="64"></a>
 
 ## Projects
 
