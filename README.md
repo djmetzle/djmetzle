@@ -9,4 +9,4 @@
 
 ## Contributions
 
-![GitHub Contributions](./contributions.svg)
+[![GitHub Contributions](./contributions.svg)](https://raw.githubusercontent.com/djmetzle/djmetzle/refs/heads/main/contributions.svg)
