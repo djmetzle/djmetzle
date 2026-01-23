@@ -12,3 +12,7 @@ See my blog at [djmetzle.io](https://djmetzle.io)
 
 - [LinkedIn](https://linkedin.com/in/djmetzle)
 - [Bluesky](https://bsky.app/profile/djmetzle.bsky.social)
+
+## Contributions
+
+![GitHub Contributions](./contributions.svg)
