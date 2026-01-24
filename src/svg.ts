@@ -10,7 +10,7 @@ const COLORS: Record<ContributionDay["contributionLevel"], string> = {
 
 const CELL_SIZE = 10;
 const CELL_GAP = 2;
-const YEAR_LABEL_WIDTH = 40;
+const YEAR_LABEL_WIDTH = 70;
 const YEAR_GAP = 20;
 
 function getWeekOfYear(date: Date): number {
@@ -65,9 +65,15 @@ function generateYearGrid(yearData: YearContributions, yOffset: number): string 
   }
 
   // Year label
-  const labelY = yOffset + 3.5 * (CELL_SIZE + CELL_GAP) + 4;
+  const totalContributions = yearData.days.reduce((sum, day) => sum + day.contributionCount, 0);
+  const centerX = (YEAR_LABEL_WIDTH - 10) / 2;
+  const labelY = yOffset + 3 * (CELL_SIZE + CELL_GAP);
+  const countY = labelY + 18;
   cells.push(
-    `<text x="0" y="${labelY}" fill="#8b949e" font-size="10" font-family="sans-serif">${year}</text>`
+    `<text x="${centerX}" y="${labelY}" fill="#8b949e" font-size="16" font-weight="bold" font-family="sans-serif" text-anchor="middle">${year}</text>`
+  );
+  cells.push(
+    `<text x="${centerX}" y="${countY}" fill="#6e7681" font-size="10" font-family="sans-serif" text-anchor="middle">${totalContributions.toLocaleString()}</text>`
   );
 
   return cells.join("\n    ");
